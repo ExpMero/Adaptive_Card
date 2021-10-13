@@ -1,20 +1,25 @@
 local password = "exp"
 
 local card = {
-  type = "AdaptiveCard",
-  version = "1.3",
-  body = { {
-    type = "Input.Text",
-    placeholder = "ضع باسورد السيرفر",
-    id = "test"
-  }, {
-    type = "ActionSet",
-    actions = { {
-      type = "Action.Submit",
-      title = "ارسال",
-      style = "positive"
-    } }
-  } }
+    type = "AdaptiveCard",
+    version = "1.3",
+    body = {
+        {
+            type = "Input.Text",
+            placeholder = "ضع باسورد السيرفر",
+            id = "test"
+        }, 
+        {
+            type = "ActionSet",
+            actions = {
+                {
+                    type = "Action.Submit",
+                    title = "ارسال",
+                    style = "positive"
+                }
+            }
+        }
+    }
 }
 
 local attemp = 0
